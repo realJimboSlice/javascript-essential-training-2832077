@@ -116,9 +116,46 @@ const rainDroplet = {
   },
 };
 
+const towel = {
+  color: "azure",
+  brand: "unknown",
+  isNew: false,
+  isDry: false,
+  dry: function () {
+    if (this.isDry == false) {
+      this.isDry = true;
+      console.log("Towel dried.");
+    } else {
+      console.log("Towel already dry.");
+    }
+  },
+};
+
+const faceCleanser = {
+  brand: "unknown",
+  containerMaxVoL: 500 + "ml",
+  containerCurrentVol: 250 + "ml",
+  isLocked: true,
+  isPumped: false,
+  fill: function () {
+    this.containerCurrentVol = this.containerMaxVoL;
+    console.log("Face cleanser filled.");
+  },
+  pump: function () {
+    if (this.isLocked == false) {
+      this.isPumped = true;
+      console.log("Face cleanser pumped.");
+    } else {
+      console.log("Face cleanser locked.");
+    }
+  },
+};
+
 console.log("Cup:", cup);
 console.log("Guitar:", guitar);
 console.log("Phone:", phone);
 console.log("Candle:", candle);
 console.log("Playstation 4:", playstation4);
 console.log("Rai droplet:", rainDroplet);
+console.log("Towel:", towel);
+console.log("Face cleanser:", faceCleanser);
