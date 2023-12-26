@@ -6,3 +6,11 @@
  * - Create several objects using the class.
  * - Test the objecs by calling their properties and using their methods in the console.
  */
+
+import Pen from "./Pen.js";
+
+const myPen = new Pen("My Pen", "red", false);
+console.log(myPen);
+
+const yourPen = new Pen("Your Pen", "yellow", true);
+console.log(yourPen);
