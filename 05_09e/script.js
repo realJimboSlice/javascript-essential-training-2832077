@@ -56,3 +56,24 @@ newArticle.setAttribute("id", "everyday");
 newArticle.innerHTML = content;
 
 main.append(newArticle);
+
+/* const navContent = `
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Backpacks</a></li>
+      <li><a href="#">Other things</a></li>
+      <li><a href="#">Contact</a></li>
+`;
+
+function createNavMenu(document) {
+  // Your code goes here
+
+  const newUl = document.createElement("ul");
+  newUl.innerHTML = navContent;
+
+  const newNav = document.createElement("nav");
+  newNav.classList.add("main-navigation");
+  newNav.append(newUl);
+
+  document.querySelector(".siteheader").append(newNav);
+} */
